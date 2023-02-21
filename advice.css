@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+body {
+  background-color: hsl(218, 23%, 16%);
+  margin: 0;
+  /* font-size: 15px; */
+
+  font-family: "Manrope", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /*div can be centered in the viewport height(the body does not always cover the viewport height, it just takes minimal space to cintain its children.)*/
+
+  min-height: 100vh;
+}
+
+.center {
+  border-radius: 10px;
+  padding: 20px;
+  background-color: hsl(217, 19%, 24%);
+  max-width: 25vw;
+  position: relative;
+  /* display: flex; */
+  /* height: 65vh; Dont use height stupid as it creates a static div that's why your content was overflowing from it. */
+}
+
+#advice {
+  color: hsl(150, 100%, 66%);
+  text-align: center;
+  font-size: x-small;
+  /* font-weight: 600; */
+}
+
+#quote {
+  color: hsl(193, 38%, 86%);
+  font-size: 28px;
+  /* font-weight: 800; */
+  padding: 20px;
+  display: block;
+  max-width: 100%;
+  /* margin-bottom: 5%; */
+  /* display: flex; */
+}
+
+#line {
+  /* Below 2 line of code for responsive setup. */
+  display: block;
+  max-width: 100%;
+  margin-bottom: 12%;
+
+  /* this will make the image grow 100% of the container size and respect its paddings */
+}
+
+#reload {
+  background-color: hsl(150, 100%, 66%);
+  /* border: 0px; */
+  cursor: pointer;
+
+  border: none;
+  border-radius: 50%;
+  /* height: auto; */
+  max-width: 20%;
+  /* margin: 5%; */
+  padding: 5%;
+  /* text-align: center; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 100%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+
+#reload:hover {
+  box-shadow: 0px 0px 25px 2px hsl(150, 100%, 66%);
+  /* background-color: ; */
+}
+
+.dice img {
+  height: 100%;
+  width: 100%;
+}
+
+@media (max-width: 375px) {
+  .center {
+    max-width: 60%;
+  }
+}

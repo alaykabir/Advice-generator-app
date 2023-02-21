@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Frontend Mentor | Advice generator app</title>
+    <link rel="stylesheet" href="advice.css" />
+  </head>
+
+  <body>
+    <div class="center">
+      <div id="advice"></div>
+      <div id="quote">
+        <!-- "It is easy to sit up and take notice, what's difficult is getting up
+        and taking action." -->
+      </div>
+
+      <div class="line">
+        <img
+          src="images/pattern-divider-desktop.svg"
+          alt="pattern-divider-desktop"
+          id="line"
+        />
+      </div>
+
+      <button id="reload">
+        <img src="images/icon-dice.svg" alt="icon-dice" id="dice" />
+      </button>
+    </div>
+
+    <script type="text/javascript" src="advice.js"></script>
+  </body>
+
+  <!-- <script>
+    const api_url = "https://api.adviceslip.com/advice";
+
+    async function getUser() {
+      const response = await fetch(api_url);
+      const data = await response.json();
+      console.log(data.results);
+    }
+  </script> -->
+</html>
