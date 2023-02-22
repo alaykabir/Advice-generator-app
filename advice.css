@@ -19,10 +19,19 @@ body {
   border-radius: 10px;
   padding: 20px;
   background-color: hsl(217, 19%, 24%);
-  max-width: 25vw;
+
+  /* max-width: 25vw; */
+  /* Firstly for your whole element you gave max-width: 25vw that's mean if you have mobile with width of for example 400px the element width would be 100px. You could do something like this: */
+
+  min-width: 25vw;
+  max-width: 300px;
+  /* That's mean width would be 25vw but no more than 500px. Of course you can change those values. */
+
   position: relative;
   /* display: flex; */
   /* height: 65vh; Dont use height stupid as it creates a static div that's why your content was overflowing from it. */
+
+  text-align: center;
 }
 
 #advice {
@@ -50,6 +59,9 @@ body {
   margin-bottom: 12%;
 
   /* this will make the image grow 100% of the container size and respect its paddings */
+
+  margin-inline: auto;
+  /* it's not centered. That's mean add the same amount of margin in the left and the right */
 }
 
 #reload {
